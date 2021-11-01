@@ -6,8 +6,8 @@ TagManager:
   tags:
   - Food
   - Obstacle
-  - speedFood
   - lifeFood
+  - fastFood
   layers:
   - Default
   - TransparentFX

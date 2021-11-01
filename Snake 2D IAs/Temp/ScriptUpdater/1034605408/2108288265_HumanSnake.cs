@@ -13,6 +13,10 @@ public class HumanSnake : MonoBehaviour
         private List<Transform> _segments;
         public Transform segmentPrefab;
         
+        private Vector3 velocity = new Vector3(10f, 10f, 0f);
+
+        
+
         //Method to start position and body
         private void Start()
         {
@@ -20,6 +24,7 @@ public class HumanSnake : MonoBehaviour
                 _segments.Add(this.transform);
                 lives = 1;
                 updateFrequence = 10;
+                this.GetComponent<Rigidbody2D>().velocity = velocity;
         }
 
         private void Update()

@@ -30,5 +30,10 @@ public class LifeFood : MonoBehaviour
         {
             RandomizePosition();
         }
+
+        if (other.tag == "Obstacle")
+        {
+            RandomizePosition();
+        }
     }
 }
