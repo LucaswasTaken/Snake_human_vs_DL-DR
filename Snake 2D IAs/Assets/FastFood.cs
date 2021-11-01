@@ -31,7 +31,12 @@ public class FastFood : MonoBehaviour
             RandomizePosition();
         }
 
-        if (other.tag == "Obstacle")
+        else if (other.tag == "snakeBody")
+        {
+            RandomizePosition();
+        }
+
+        else if (other.tag == "Obstacle")
         {
             RandomizePosition();
         }

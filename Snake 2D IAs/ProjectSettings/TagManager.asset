@@ -8,6 +8,12 @@ TagManager:
   - Obstacle
   - lifeFood
   - fastFood
+  - snakeBody
+  - leftWall
+  - rightWall
+  - upWall
+  - downWall
+  - snakeIABody
   layers:
   - Default
   - TransparentFX
