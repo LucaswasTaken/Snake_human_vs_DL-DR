@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 using System.Collections.Generic;
 // using Tensorflow;
 
@@ -6,11 +7,18 @@ public class IASnake : MonoBehaviour
 {
         private Vector2 _direction = Vector2.right;
 
+        //UI data
+        public Text pointText;
+
         //Getting the update frequence (snake speed)
         private int updateCount = 0;
         private int updateFrequence = 10;
+
+        // Points
         public BoxCollider2D gridArea;
         public  int lives = 1;
+        public  int points = 0;
+
         //Adding Body Features
         private List<Transform> _segments;
         public Transform segmentPrefab;
@@ -22,6 +30,7 @@ public class IASnake : MonoBehaviour
                 _segments.Add(this.transform);
                 lives = 1;
                 updateFrequence = 10;
+                pointText.text = $"ENGINE POWER BLOCK: {points - lives + 1} \nBATTERING RAM BLOCK: {lives - 1}\nPoints: {points}";
         }
 
         private void Update()
@@ -79,8 +88,10 @@ public class IASnake : MonoBehaviour
                 }
                 _segments.Clear();
                 _segments.Add(this.transform);
-                lives = 1;
-                updateFrequence = 10;
+                this.lives = 1;
+                this.points = 0;
+                this.updateFrequence = 10;
+                pointText.text = $"ENGINE POWER BLOCK: {points - lives + 1} \nBATTERING RAM BLOCK: {lives - 1}\nPoints: {points}";
 
                 this.transform.position = new Vector3(10.0f, 0.0f,0.0f);
 
@@ -137,6 +148,8 @@ public class IASnake : MonoBehaviour
                         {
                                 ResetState();    
                         }
+                        this.points-=1;
+                        pointText.text = $"ENGINE POWER BLOCK: {points - lives + 1} \nBATTERING RAM BLOCK: {lives - 1}\nPoints: {points}";
                         
                 }
                 else if (other.tag == "fastFood")
@@ -146,6 +159,8 @@ public class IASnake : MonoBehaviour
                                 updateFrequence-=1;
                         }
                         Grow();
+                        this.points+=1;
+                        pointText.text = $"ENGINE POWER BLOCK: {points - lives + 1} \nBATTERING RAM BLOCK: {lives - 1}\nPoints: {points}";
                 }
                 else if (other.tag == "lifeFood")
                 {
@@ -153,7 +168,9 @@ public class IASnake : MonoBehaviour
                         {
                                 updateFrequence+=1;
                         }
-                        lives+=1;
+                        this.lives+=1;
+                        this.points+=1;
+                        pointText.text = $"ENGINE POWER BLOCK: {points - lives + 1} \nBATTERING RAM BLOCK: {lives - 1}\nPoints: {points}";
                         Grow();
                 } 
 
