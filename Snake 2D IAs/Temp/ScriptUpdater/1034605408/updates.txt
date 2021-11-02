@@ -1,1 +1,1 @@
-Temp/ScriptUpdater/1034605408\2108288265_HumanSnake.cs => Assets/HumanSnake.cs
+Temp/ScriptUpdater/1034605408\1549405199_FastFood.cs => Assets/FastFood.cs
