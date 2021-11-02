@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 
 public class HumanSnake : MonoBehaviour
 {
@@ -34,29 +35,36 @@ public class HumanSnake : MonoBehaviour
                 updateFrequence = 10;
                 pointText.text = $"ENGINE POWER BLOCK: {points - lives + 1} \nBATTERING RAM BLOCK: {lives - 1}\nPoints: {points}";
         }
+
+        //Game Over
+        public void gameOver()
+        {
+                SceneManager.LoadScene("gameOver");
+        }
+
         //Update Direction
         private void Update()
         {
                 if (Input.GetKeyDown(KeyCode.W))
                 {
-                        if (_direction != Vector2.down)
+                        if ((_direction != Vector2.down) && ((_segments.Count == 1)|| (_segments[0].position - _segments[1].position != Vector3.down)))
                         {_direction = Vector2.up;}
                 }
                 else if (Input.GetKeyDown(KeyCode.S))
                 {
-                        if (_direction != Vector2.up)
+                        if ((_direction != Vector2.up) && ((_segments.Count == 1)|| (_segments[0].position - _segments[1].position != Vector3.up)))
                         {_direction = Vector2.down;}
                 }
 
                 else if (Input.GetKeyDown(KeyCode.A))
                 {
-                        if (_direction != Vector2.right)
+                        if ((_direction != Vector2.right) && ((_segments.Count == 1)|| (_segments[0].position - _segments[1].position != Vector3.right)))
                         {_direction = Vector2.left;}
                 }
 
                 else if (Input.GetKeyDown(KeyCode.D))
                 {
-                        if (_direction != Vector2.left)
+                        if ((_direction != Vector2.left) && ((_segments.Count == 1)|| (_segments[0].position - _segments[1].position != Vector3.left)))
                         {_direction = Vector2.right;}
                 }
         }
@@ -96,6 +104,7 @@ public class HumanSnake : MonoBehaviour
                 this.updateFrequence = 10;
                 pointText.text = $"ENGINE POWER BLOCK: {points - lives + 1} \nBATTERING RAM BLOCK: {lives - 1}\nPoints: {points}";
                 this.transform.position = new Vector3(-10.0f, 0.0f,0.0f);
+                gameOver();
 
         }
 

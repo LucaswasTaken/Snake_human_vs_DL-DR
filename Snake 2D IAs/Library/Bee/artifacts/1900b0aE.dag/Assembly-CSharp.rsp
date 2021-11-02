@@ -344,6 +344,7 @@
 "Assets/Scripts/FastFood.cs"
 "Assets/Scripts/HumanSnake.cs"
 "Assets/Scripts/IASnake.cs"
+"Assets/Scripts/mainMenu.cs"
 -langversion:8.0
 
 /deterministic
