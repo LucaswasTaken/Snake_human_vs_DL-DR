@@ -22,5 +22,15 @@ public class mainMenu : MonoBehaviour
         SceneManager.LoadScene("Menu");
     }
 
+    public void Onboarding()
+    {
+        SceneManager.LoadScene("onboard2");
+    }
+
+    public void Begin()
+    {
+        SceneManager.LoadScene("onboard1");
+    }
+
 
 }
