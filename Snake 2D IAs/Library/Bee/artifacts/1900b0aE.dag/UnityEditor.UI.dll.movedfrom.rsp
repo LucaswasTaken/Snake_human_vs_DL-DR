@@ -82,6 +82,11 @@ Library\Bee\artifacts\movedfrom\UnityEngine.XRModule.dll_13737474154758422129.mo
 Library\Bee\artifacts\movedfrom\UnityEditor.UWP.Extensions.dll_9089350526169315040.movedfrom
 Library\Bee\artifacts\movedfrom\UnityEditor.WebGL.Extensions.dll_10194333615170517221.movedfrom
 Library\Bee\artifacts\movedfrom\UnityEditor.WindowsStandalone.Extensions.dll_3708858963946781525.movedfrom
+Library\Bee\artifacts\movedfrom\Unity.Burst.Cecil.dll_9774982828243182034.movedfrom
+Library\Bee\artifacts\movedfrom\Unity.Burst.Cecil.Mdb.dll_3102352732694415759.movedfrom
+Library\Bee\artifacts\movedfrom\Unity.Burst.Cecil.Pdb.dll_4782890763919526674.movedfrom
+Library\Bee\artifacts\movedfrom\Unity.Burst.Cecil.Rocks.dll_2667142044065726834.movedfrom
+Library\Bee\artifacts\movedfrom\Unity.Burst.Unsafe.dll_17629114888067969313.movedfrom
 Library\Bee\artifacts\movedfrom\Unity.Plastic.Antlr3.Runtime.dll_13957506641179714750.movedfrom
 Library\Bee\artifacts\movedfrom\Unity.VisualScripting.IonicZip.dll_12520378485111202605.movedfrom
 Library\Bee\artifacts\movedfrom\Unity.VisualScripting.YamlDotNet.dll_6357372409328082527.movedfrom
