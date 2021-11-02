@@ -1,1 +1,0 @@
-Temp/ScriptUpdater/1034605408\1549405199_FastFood.cs => Assets/FastFood.cs
