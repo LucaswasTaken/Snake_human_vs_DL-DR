@@ -371,16 +371,6 @@
         },
         {
             "managedAssemblyName": "UnityEngine.dll",
-            "nativeClass": "VideoPlayer",
-            "fullManagedTypeName": "UnityEngine.Video.VideoPlayer",
-            "moduleName": "Video",
-            "usedInScenes": [
-                "Assets/Scenes/onboard1.unity",
-                "Assets/Scenes/onboard2.unity"
-            ]
-        },
-        {
-            "managedAssemblyName": "UnityEngine.dll",
             "nativeClass": "Behaviour",
             "fullManagedTypeName": "UnityEngine.Behaviour",
             "moduleName": "Core",
@@ -423,6 +413,16 @@
         },
         {
             "managedAssemblyName": "UnityEngine.dll",
+            "nativeClass": "AnimationClip",
+            "fullManagedTypeName": "UnityEngine.AnimationClip",
+            "moduleName": "Animation",
+            "usedInScenes": [
+                "Assets/Scenes/onboard1.unity",
+                "Assets/Scenes/onboard2.unity"
+            ]
+        },
+        {
+            "managedAssemblyName": "UnityEngine.dll",
             "nativeClass": "MonoBehaviour",
             "fullManagedTypeName": "UnityEngine.MonoBehaviour",
             "moduleName": "Core",
@@ -433,6 +433,46 @@
                 "Assets/Scenes/snakeDL.unity",
                 "Assets/Scenes/snakeDRL.unity",
                 "Assets/Scenes/gameOver.unity"
+            ]
+        },
+        {
+            "managedAssemblyName": "UnityEngine.dll",
+            "nativeClass": "Animator",
+            "fullManagedTypeName": "UnityEngine.Animator",
+            "moduleName": "Animation",
+            "usedInScenes": [
+                "Assets/Scenes/onboard1.unity",
+                "Assets/Scenes/onboard2.unity"
+            ]
+        },
+        {
+            "managedAssemblyName": "UnityEngine.dll",
+            "nativeClass": "AnimatorController",
+            "fullManagedTypeName": "UnityEditor.Animations.AnimatorController",
+            "moduleName": "Animation",
+            "usedInScenes": [
+                "Assets/Scenes/onboard1.unity",
+                "Assets/Scenes/onboard2.unity"
+            ]
+        },
+        {
+            "managedAssemblyName": "UnityEngine.dll",
+            "nativeClass": "Motion",
+            "fullManagedTypeName": "UnityEngine.Motion",
+            "moduleName": "Animation",
+            "usedInScenes": [
+                "Assets/Scenes/onboard1.unity",
+                "Assets/Scenes/onboard2.unity"
+            ]
+        },
+        {
+            "managedAssemblyName": "UnityEngine.dll",
+            "nativeClass": "RuntimeAnimatorController",
+            "fullManagedTypeName": "UnityEngine.RuntimeAnimatorController",
+            "moduleName": "Animation",
+            "usedInScenes": [
+                "Assets/Scenes/onboard1.unity",
+                "Assets/Scenes/onboard2.unity"
             ]
         },
         {
@@ -584,16 +624,6 @@
             ]
         },
         {
-            "managedAssemblyName": "UnityEngine.dll",
-            "nativeClass": "VideoClip",
-            "fullManagedTypeName": "UnityEngine.Video.VideoClip",
-            "moduleName": "Video",
-            "usedInScenes": [
-                "Assets/Scenes/onboard1.unity",
-                "Assets/Scenes/onboard2.unity"
-            ]
-        },
-        {
             "managedAssemblyName": "",
             "nativeClass": "SampleClip",
             "fullManagedTypeName": "",
@@ -661,6 +691,13 @@
             "managedAssemblyName": "Assembly-CSharp.dll",
             "nativeClass": "",
             "fullManagedTypeName": "mainMenu",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Unity.2D.Animation.Runtime.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "UnityEngine.U2D.Animation.BufferManager",
             "moduleName": "",
             "usedInScenes": []
         },

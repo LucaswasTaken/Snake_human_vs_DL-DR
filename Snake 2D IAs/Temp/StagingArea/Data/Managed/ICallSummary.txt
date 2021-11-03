@@ -1,5 +1,9 @@
 Unity.Burst.LowLevel.BurstCompilerService::Log
 Unity.Collections.LowLevel.Unsafe.UnsafeUtility::Free
+Unity.Collections.LowLevel.Unsafe.UnsafeUtility::MemCpy
+Unity.Collections.LowLevel.Unsafe.UnsafeUtility::MemCpyStride
+Unity.Collections.LowLevel.Unsafe.UnsafeUtility::MemSet
+Unity.Collections.LowLevel.Unsafe.UnsafeUtility::Malloc
 Unity.Jobs.JobHandle::ScheduleBatchedJobs
 Unity.Jobs.LowLevel.Unsafe.JobsUtility::set_JobCompilerEnabled
 Unity.Profiling.LowLevel.Unsafe.ProfilerUnsafeUtility::CreateMarker
@@ -9,6 +13,7 @@ UnityEngine.AnimationCurve::Internal_Equals
 UnityEngine.AnimationCurve::Internal_Create
 UnityEngine.AnimationCurve::Internal_Destroy
 UnityEngine.Animator::get_hasBoundPlayables
+UnityEngine.Animator::StringToHash
 UnityEngine.Animator::ResetTriggerString
 UnityEngine.Animator::SetTriggerString
 UnityEngine.Application::get_isPlaying
@@ -329,6 +334,7 @@ UnityEngine.RectTransform::set_sizeDelta_Injected
 UnityEngine.RectTransformUtility::PointInRectangle_Injected
 UnityEngine.RectTransformUtility::PixelAdjustPoint_Injected
 UnityEngine.RectTransformUtility::PixelAdjustRect_Injected
+UnityEngine.Renderer::get_isVisible
 UnityEngine.Renderer::get_sortingLayerID
 UnityEngine.Renderer::get_sortingOrder
 UnityEngine.Rendering.GraphicsSettings::get_lightsUseLinearIntensity
@@ -344,6 +350,7 @@ UnityEngine.RenderTexture::set_graphicsFormat
 UnityEngine.RenderTexture::set_height
 UnityEngine.RenderTexture::set_width
 UnityEngine.Resources::GetBuiltinResource
+UnityEngine.ResourcesAPIInternal::FindObjectsOfTypeAll
 UnityEngine.SceneManagement.SceneManager::get_sceneCount
 UnityEngine.SceneManagement.SceneManager::GetSceneAt_Injected
 UnityEngine.SceneManagement.SceneManagerAPIInternal::LoadSceneAsyncNameIndexInternal_Injected
@@ -373,11 +380,14 @@ UnityEngine.Sprite::get_texture
 UnityEngine.Sprite::get_uv
 UnityEngine.Sprite::get_vertices
 UnityEngine.SpriteRenderer::set_color_Injected
+UnityEngine.SpriteRenderer::set_sprite
+UnityEngine.SpriteRenderer::get_sprite
 UnityEngine.SystemInfo::IsFormatSupported
 UnityEngine.SystemInfo::SupportsTextureFormatNative
 UnityEngine.SystemInfo::GetCompatibleFormat
 UnityEngine.SystemInfo::GetGraphicsFormat
 UnityEngine.SystemInfo::GetOperatingSystemFamily
+UnityEngine.SystemInfo::GetRenderingThreadingMode
 UnityEngine.TextAsset::get_bytes
 UnityEngine.TextGenerator::Populate_Internal_Injected
 UnityEngine.TextGenerator::get_characterCount
@@ -400,6 +410,7 @@ UnityEngine.Texture2DArray::Internal_CreateImpl
 UnityEngine.Texture2DArray::get_isReadable
 UnityEngine.Texture3D::Internal_CreateImpl
 UnityEngine.Texture3D::get_isReadable
+UnityEngine.Time::get_frameCount
 UnityEngine.Time::get_deltaTime
 UnityEngine.Time::get_realtimeSinceStartup
 UnityEngine.Time::get_unscaledDeltaTime
@@ -435,10 +446,20 @@ UnityEngine.Transform::set_localRotation_Injected
 UnityEngine.Transform::set_localScale_Injected
 UnityEngine.Transform::set_position_Injected
 UnityEngine.Transform::set_rotation_Injected
+UnityEngine.Transform::FindRelativeTransformWithPath
 UnityEngine.Transform::GetChild
 UnityEngine.Transform::GetParent
 UnityEngine.U2D.SpriteAtlas::CanBindTo
 UnityEngine.U2D.SpriteAtlasManager::Register
+UnityEngine.U2D.SpriteDataAccessExtensions::HasVertexAttribute
+UnityEngine.U2D.SpriteDataAccessExtensions::GetPrimaryVertexStreamSize
+UnityEngine.U2D.SpriteDataAccessExtensions::GetVertexCount
+UnityEngine.U2D.SpriteDataAccessExtensions::GetBindPoseInfo_Injected
+UnityEngine.U2D.SpriteDataAccessExtensions::GetChannelInfo_Injected
+UnityEngine.U2D.SpriteDataAccessExtensions::GetBoneInfo
+UnityEngine.U2D.SpriteRendererDataAccessExtensions::DeactivateDeformableBuffer
+UnityEngine.U2D.SpriteRendererDataAccessExtensions::SetDeformableBuffer
+UnityEngine.U2D.SpriteRendererDataAccessExtensions::SetLocalAABB_Injected
 UnityEngine.UISystemProfilerApi::AddMarker
 UnityEngine.UISystemProfilerApi::BeginSample
 UnityEngine.UISystemProfilerApi::EndSample
