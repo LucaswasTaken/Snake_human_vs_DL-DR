@@ -682,7 +682,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 664853550}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c5aaa53a9e6fc31418728bf9c9e18592, type: 3}
+  m_Script: {fileID: 11500000, guid: b2320e72c047eca40927116b14e11e0a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   pointText: {fileID: 185082771}

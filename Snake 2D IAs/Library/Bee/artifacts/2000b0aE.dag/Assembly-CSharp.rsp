@@ -344,9 +344,10 @@
 -r:"Library/Bee/artifacts/2000b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/2000b0aE.dag/UnityEngine.UI.ref.dll"
 -r:"Library/Bee/artifacts/2000b0aE.dag/VSSettingsProvider.ref.dll"
+"Assets/Scripts/DLSnake.cs"
+"Assets/Scripts/DRLSnake.cs"
 "Assets/Scripts/FastFood.cs"
 "Assets/Scripts/HumanSnake.cs"
-"Assets/Scripts/IASnake.cs"
 "Assets/Scripts/mainMenu.cs"
 -langversion:8.0
 
