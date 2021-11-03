@@ -95,8 +95,11 @@
 -define:ENABLE_TILEMAP
 -define:ENABLE_TIMELINE
 -define:ENABLE_LEGACY_INPUT_MANAGER
+-define:ENABLE_TENSORFLOW
+-define:ENABLE_ANIMATION_BURST
 -define:CSHARP_7_OR_LATER
 -define:CSHARP_7_3_OR_NEWER
+-r:"Assets/ML-Agents/Plugins/Computer/TensorFlowSharp.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/2021.1.16f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/mscorlib.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/2021.1.16f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.ComponentModel.Composition.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/2021.1.16f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Core.dll"
@@ -277,9 +280,20 @@
 -r:"C:/Program Files/Unity/Hub/Editor/2021.1.16f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.VRModule.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/2021.1.16f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.WindModule.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/2021.1.16f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.XRModule.dll"
+-r:"C:/Users/lucas/Documents/GitHub/Snake_human_vs_DL-DR/Snake 2D IAs/Library/PackageCache/com.unity.barracuda@1.0.4/Barracuda/Runtime/Plugins/ProtoBuffer/Google.Protobuf.dll"
+-r:"C:/Users/lucas/Documents/GitHub/Snake_human_vs_DL-DR/Snake 2D IAs/Library/PackageCache/com.unity.burst@1.5.4/Unity.Burst.CodeGen/Unity.Burst.Cecil.dll"
+-r:"C:/Users/lucas/Documents/GitHub/Snake_human_vs_DL-DR/Snake 2D IAs/Library/PackageCache/com.unity.burst@1.5.4/Unity.Burst.CodeGen/Unity.Burst.Cecil.Mdb.dll"
+-r:"C:/Users/lucas/Documents/GitHub/Snake_human_vs_DL-DR/Snake 2D IAs/Library/PackageCache/com.unity.burst@1.5.4/Unity.Burst.CodeGen/Unity.Burst.Cecil.Pdb.dll"
+-r:"C:/Users/lucas/Documents/GitHub/Snake_human_vs_DL-DR/Snake 2D IAs/Library/PackageCache/com.unity.burst@1.5.4/Unity.Burst.CodeGen/Unity.Burst.Cecil.Rocks.dll"
+-r:"C:/Users/lucas/Documents/GitHub/Snake_human_vs_DL-DR/Snake 2D IAs/Library/PackageCache/com.unity.burst@1.5.4/Unity.Burst.Unsafe.dll"
+-r:"C:/Users/lucas/Documents/GitHub/Snake_human_vs_DL-DR/Snake 2D IAs/Library/PackageCache/com.unity.ml-agents@1.0.8/Plugins/ProtoBuffer/Grpc.Core.dll"
+-r:"C:/Users/lucas/Documents/GitHub/Snake_human_vs_DL-DR/Snake 2D IAs/Library/PackageCache/com.unity.ml-agents@1.0.8/Plugins/ProtoBuffer/System.Interactive.Async.dll"
+-r:"C:/Users/lucas/Documents/GitHub/Snake_human_vs_DL-DR/Snake 2D IAs/Library/PackageCache/com.unity.ml-agents@1.0.8/Plugins/System.IO.Abstractions.dll"
+-r:"C:/Users/lucas/Documents/GitHub/Snake_human_vs_DL-DR/Snake 2D IAs/Library/PackageCache/com.unity.ml-agents@1.0.8/Plugins/System.IO.Abstractions.TestingHelpers.dll"
 -r:"C:/Users/lucas/Documents/GitHub/Snake_human_vs_DL-DR/Snake 2D IAs/Library/PackageCache/com.unity.nuget.newtonsoft-json@2.0.0/Runtime/AOT/Newtonsoft.Json.dll"
 -r:"C:/Users/lucas/Documents/GitHub/Snake_human_vs_DL-DR/Snake 2D IAs/Library/PackageCache/com.unity.visualscripting@1.6.1/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll"
 -r:"Library/Bee/artifacts/1900b0aP.dag/Unity.2D.Common.Runtime.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aP.dag/Unity.Burst.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aP.dag/Unity.InternalAPIEngineBridge.001.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aP.dag/Unity.Mathematics.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aP.dag/UnityEngine.UI.ref.dll"

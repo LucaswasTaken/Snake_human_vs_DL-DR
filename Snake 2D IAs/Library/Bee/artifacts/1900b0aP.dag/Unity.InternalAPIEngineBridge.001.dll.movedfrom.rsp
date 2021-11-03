@@ -64,4 +64,9 @@ Library\Bee\artifacts\movedfrom\UnityEngine.VirtualTexturingModule.dll_638298040
 Library\Bee\artifacts\movedfrom\UnityEngine.VRModule.dll_15289113701470449083.movedfrom
 Library\Bee\artifacts\movedfrom\UnityEngine.WindModule.dll_17287064038081705015.movedfrom
 Library\Bee\artifacts\movedfrom\UnityEngine.XRModule.dll_498943999481903897.movedfrom
+Library\Bee\artifacts\movedfrom\Unity.Burst.Cecil.dll_9774982828243182034.movedfrom
+Library\Bee\artifacts\movedfrom\Unity.Burst.Cecil.Mdb.dll_3102352732694415759.movedfrom
+Library\Bee\artifacts\movedfrom\Unity.Burst.Cecil.Pdb.dll_4782890763919526674.movedfrom
+Library\Bee\artifacts\movedfrom\Unity.Burst.Cecil.Rocks.dll_2667142044065726834.movedfrom
+Library\Bee\artifacts\movedfrom\Unity.Burst.Unsafe.dll_17629114888067969313.movedfrom
 Library\Bee\artifacts\movedfrom\Unity.VisualScripting.Antlr3.Runtime.dll_695546001421217406.movedfrom

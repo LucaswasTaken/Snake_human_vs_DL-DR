@@ -1,8 +1,8 @@
 using UnityEngine;
 using UnityEngine.UI;
 using System.Collections.Generic;
-using TensorFlow;
-
+// using TensorFlow;
+// using System.IO;
 public class IASnake : MonoBehaviour
 {
         private Vector2 _direction = Vector2.right;
@@ -35,6 +35,32 @@ public class IASnake : MonoBehaviour
 
         private void Update()
         {
+
+
+                ///Skeletal code using TensorFlowSharp (not work due TensorFlowSharp update)
+                ///
+                // using (var graph = new TFGraph ())
+                // {
+                //         graph.Import(File.ReadAllBytes("./Assets/Scripts/model_tf/saved_model.pb"));
+                // }
+                // // 
+                // var input = new TFTensor[1,0,0,0,1,0,1,0,1,0,1,0];
+                // var output = new TFTensor[4];                
+                //     // using (var session = new TFSession(graph))
+                //     // {
+                //     //     // Setup the runner
+                //     //     var runner = session.GetRunner();
+                //     //     runner.AddInput(graph["input"][0], input);
+                //     //     runner.Fetch(graph["output"][0]);
+                //     //     // Run the model
+                //     //     output = runner.Run();
+                //     //     // Fetch the result from output into `result`
+                //     //     var result = output[0].GetValue();
+                //     //     pointText.text = $"ENGINE POWER BLOCK: {result} \nBATTERING RAM BLOCK: {result}\nPoints: {result}";
+                //     // }
+
+                
+                // update movement by direction
                 float direction_move = Random.Range(0, 4);
                 if (direction_move == 0)
                 {
