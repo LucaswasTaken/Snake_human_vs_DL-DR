@@ -48,9 +48,10 @@
 		<type fullname="UnityEngine.BoxCollider2D" preserve="nothing"/>
 	</assembly>
 	<assembly fullname="Assembly-CSharp">
+		<type fullname="DLSnake" preserve="nothing"/>
+		<type fullname="DRLSnake" preserve="nothing"/>
 		<type fullname="FastFood" preserve="nothing"/>
 		<type fullname="HumanSnake" preserve="nothing"/>
-		<type fullname="IASnake" preserve="nothing"/>
 		<type fullname="mainMenu" preserve="nothing"/>
 	</assembly>
 	<assembly fullname="Unity.2D.Animation.Runtime">

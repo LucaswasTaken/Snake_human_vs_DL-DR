@@ -151,6 +151,7 @@ UnityEngine.GameObject::GetComponent
 UnityEngine.GameObject::GetComponentInChildren
 UnityEngine.GameObject::GetComponentInParent
 UnityEngine.GameObject::Internal_AddComponentWithType
+UnityEngine.GameObject::Find
 UnityEngine.GameObject::get_transform
 UnityEngine.Gradient::Internal_Equals
 UnityEngine.Gradient::Init

@@ -1,9 +1,10 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - DLSnake
+    - DRLSnake
     - FastFood
     - HumanSnake
-    - IASnake
     - mainMenu
     Unity.2D.Animation.Editor.dll:
     - UnityEditor.U2D.Animation.BoneGizmo
@@ -30,7 +31,6 @@ ScriptsOnlyBuild:
     - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.StateEditor
     - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
@@ -302,8 +302,6 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1612}
     - Class: 114
-      Script: {instanceID: 2362}
-    - Class: 114
       Script: {instanceID: 2836}
     - Class: 114
       Script: {instanceID: 3096}
@@ -317,6 +315,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 7294}
     - Class: 114
       Script: {instanceID: 7538}
+    - Class: 114
+      Script: {instanceID: 44332}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -498,7 +498,7 @@ ScriptsOnlyBuild:
       Hash: e2b47a47620e37ae86ba372608d8b82d
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: IASnake
+    className: DRLSnake
   - hash:
       serializedVersion: 2
       Hash: f1d735cc1a21c3704ab52568f4fbfcf8
@@ -1411,6 +1411,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: e2b47a47620e37ae86ba372608d8b82d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: DLSnake
   platform: 20
   scenePathNames:
   - Assets/Scenes/onboard1.unity
