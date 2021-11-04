@@ -1425,4 +1425,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/snakeDL.unity
   - Assets/Scenes/snakeDRL.unity
   - Assets/Scenes/gameOver.unity
-  playerPath: C:/Users/lucas/Pictures
+  playerPath: C:/Users/lucas/Documents/BUILDS UNIY/snake

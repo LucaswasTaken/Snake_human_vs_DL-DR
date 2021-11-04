@@ -16,8 +16,6 @@ public class DLSnake : MonoBehaviour
         //UI data
         public Text pointText;
 
-        //biase
-        private int biase = 0;
         //Getting the update frequence (snake speed)
         private int updateCount = 0;
         private int updateFrequence = 5;
@@ -141,28 +139,26 @@ public class DLSnake : MonoBehaviour
                         state_string = $"{state_string}{inputState[i]}";
                 }
                 // update movement by direction
-                biase+=1;
-                if (biase%10==0 && _segments.Count==1)
+                if (_segments.Count==1)
                 {
                     if (posFood.x > this.transform.position.x)
                     {
                             if (((_segments.Count == 1)|| (_segments[0].position - _segments[1].position != Vector3.left)) && inputState[5] != 1)
                             {_direction = Vector2.right;}
                     }
-                    else
+
+                    else if (posFood.x < this.transform.position.x)
                     {
                             if (((_segments.Count == 1)|| (_segments[0].position - _segments[1].position != Vector3.right)) && inputState[7] != 1)
                             {_direction = Vector2.left;}
                     }
-                }
-                else if (biase%10==5 && _segments.Count==1)
-                {
-                    if (posFood.y > this.transform.position.y)
+                
+                    else if (posFood.y > this.transform.position.y)
                     {
                             if (((_segments.Count == 1)|| (_segments[0].position - _segments[1].position != Vector3.down)) && inputState[4] != 1)
                             {_direction = Vector2.up;}
                     }
-                    else
+                    else if (posFood.y < this.transform.position.y)
                     {
                             if (((_segments.Count == 1)|| (_segments[0].position - _segments[1].position != Vector3.up)) && inputState[6] != 1)
                             {_direction = Vector2.down;}
