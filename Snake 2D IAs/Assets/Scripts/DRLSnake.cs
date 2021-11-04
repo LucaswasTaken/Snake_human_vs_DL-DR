@@ -136,31 +136,59 @@ public class DRLSnake : MonoBehaviour
                         state_string = $"{state_string}{inputState[i]}";
                 }
                 // update movement by direction
-                int direction_move;
-                dic_drl.TryGetValue(state_string, out direction_move);
-
-                if (direction_move == 0)
+                if (_segments.Count==1)
                 {
-                        if (((_segments.Count == 1)|| (_segments[0].position - _segments[1].position != Vector3.down)))
-                        {_direction = Vector2.up;}
+                    if (posFood.x > this.transform.position.x)
+                    {
+                            if (((_segments.Count == 1)|| (_segments[0].position - _segments[1].position != Vector3.left)) && inputState[5] != 1)
+                            {_direction = Vector2.right;}
+                    }
+
+                    else if (posFood.x < this.transform.position.x)
+                    {
+                            if (((_segments.Count == 1)|| (_segments[0].position - _segments[1].position != Vector3.right)) && inputState[7] != 1)
+                            {_direction = Vector2.left;}
+                    }
+                
+                    else if (posFood.y > this.transform.position.y)
+                    {
+                            if (((_segments.Count == 1)|| (_segments[0].position - _segments[1].position != Vector3.down)) && inputState[4] != 1)
+                            {_direction = Vector2.up;}
+                    }
+                    else if (posFood.y < this.transform.position.y)
+                    {
+                            if (((_segments.Count == 1)|| (_segments[0].position - _segments[1].position != Vector3.up)) && inputState[6] != 1)
+                            {_direction = Vector2.down;}
+                    }
                 }
-
-                else if (direction_move == 1)
+                else
                 {
-                        if (((_segments.Count == 1)|| (_segments[0].position - _segments[1].position != Vector3.left)))
-                        {_direction = Vector2.right;}
-                }
+                    int direction_move;
+                    dic_drl.TryGetValue(state_string, out direction_move);
 
-                else if (direction_move == 2)
-                {
-                        if (((_segments.Count == 1)|| (_segments[0].position - _segments[1].position != Vector3.up)))
-                        {_direction = Vector2.down;}
-                }
+                    if (direction_move == 0)
+                    {
+                            if (((_segments.Count == 1)|| (_segments[0].position - _segments[1].position != Vector3.down)))
+                            {_direction = Vector2.up;}
+                    }
 
-                else if (direction_move == 3)
-                {
-                        if (((_segments.Count == 1)|| (_segments[0].position - _segments[1].position != Vector3.right)))
-                        {_direction = Vector2.left;}
+                    else if (direction_move == 1)
+                    {
+                            if (((_segments.Count == 1)|| (_segments[0].position - _segments[1].position != Vector3.left)))
+                            {_direction = Vector2.right;}
+                    }
+
+                    else if (direction_move == 2)
+                    {
+                            if (((_segments.Count == 1)|| (_segments[0].position - _segments[1].position != Vector3.up)))
+                            {_direction = Vector2.down;}
+                    }
+
+                    else if (direction_move == 3)
+                    {
+                            if (((_segments.Count == 1)|| (_segments[0].position - _segments[1].position != Vector3.right)))
+                            {_direction = Vector2.left;}
+                    }
                 }
         }
 
